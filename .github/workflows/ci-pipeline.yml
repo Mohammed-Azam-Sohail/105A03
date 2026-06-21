@@ -14,10 +14,8 @@ jobs:
                 runs-on: ubuntu-latest
                 
                 steps:
-                        -name: Checkout
-                         uses: actions/checkout@v3
+                        - name: Checkout
+                          uses: actions/checkout@v3
 
-                         -name: printing a message to confirm execution
+                        - name: printing a message to confirm execution
                           run: echo 'current branch: ${{ github.ref }}'
-
-
